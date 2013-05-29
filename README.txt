@@ -5,6 +5,10 @@
   This module is similar to https://drupal.org/project/lang_dropdown but with support
   for multilink redirection (https://drupal.org/project/multilink)
  
+  IMPORTANT: Due to multilink's "bypass multilink redirect" permission, this module is
+  not going to work for administrators and anyone else who has got that permission set!
+  DON'T FORGET TO LOGOUT before testing this module!
+
   ------------------------------------------------------------------------------------
                                       INSTALLATION
   ------------------------------------------------------------------------------------
