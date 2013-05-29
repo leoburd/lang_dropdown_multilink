@@ -1,16 +1,16 @@
 (function ($) {
-Drupal.behaviors.lang_dropdown = {
+Drupal.behaviors.lang_dropdown_multilink = {
   attach: function (context, settings) {
     var settings = settings || Drupal.settings;
 
-    if (settings.lang_dropdown) {
-      var flags = settings.lang_dropdown.jsWidget.languageicons;
+    if (settings.lang_dropdown_multilink) {
+      var flags = settings.lang_dropdown_multilink.jsWidget.languageicons;
       if (flags) {
         $.each(flags, function(index, value) {
           $('select.lang-dropdown-select-element option[value="' + index + '"]').attr('title', value);
         });
       }
-      var msddSettings = settings.lang_dropdown.jsWidget;
+      var msddSettings = settings.lang_dropdown_multilink.jsWidget;
 
       $('select.lang-dropdown-select-element').msDropDown({
         visibleRows: msddSettings.visibleRows,

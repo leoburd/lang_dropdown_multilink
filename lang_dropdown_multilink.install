@@ -7,14 +7,14 @@
 /**
  * Implementation of hook_install().
  */
-function lang_dropdown_install() {
+function lang_dropdown_multilink_install() {
   drupal_set_message(st("<b>Language switcher dropdown</b> is installed successfully.<br />Please refer to README.txt for help in configuration."));
 }
 
 /**
  * Implementation of hook_uninstall().
  */
-function lang_dropdown_uninstall() {
-  db_query("DELETE FROM {variable} WHERE name = 'lang_dropdown'");
-  db_query("DELETE FROM {system} WHERE name = 'lang_dropdown'");
+function lang_dropdown_multilink_uninstall() {
+  db_query("DELETE FROM {variable} WHERE name = 'lang_dropdown_multilink'");
+  db_query("DELETE FROM {system} WHERE name = 'lang_dropdown_multilink'");
 }
