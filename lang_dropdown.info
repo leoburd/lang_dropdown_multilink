@@ -1,13 +1,7 @@
-name = Language Switcher Dropdown
+name = Language Switcher Dropdown with Multilink Support
 package = Multilingual
-description = Provides a dropdown select to switch between available languages.
+description = Provides a dropdown select to switch between available languages. Similar to https://drupal.org/project/lang_dropdown but with support for multilink redirection (https://drupal.org/project/multilink)
 dependencies[] = locale
 configure = 'admin/structure/block'
 core = 7.x
-
-; Information added by drupal.org packaging script on 2012-06-11
-version = "7.x-1.5"
-core = "7.x"
-project = "lang_dropdown"
-datestamp = "1339444196"
 
